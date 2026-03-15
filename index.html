@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Innocentia's 50th Celebration</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* GLOBAL */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#f8f3ee;
+color:#5a4038;
+overflow-x:hidden;
+}
+
+/* HERO */
+
+.hero{
+position:relative;
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:
+linear-gradient(rgba(58,40,34,0.28),rgba(58,40,34,0.28)),
+url("images/hero2.png");
+background-size:cover;
+background-position:center;
+color:white;
+padding:40px;
+overflow:hidden;
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+max-width:900px;
+width:100%;
+}
+
+.hero h1{
+font-family:'Playfair Display',serif;
+font-size:4rem;
+letter-spacing:3px;
+margin-bottom:20px;
+text-shadow:0 6px 24px rgba(0,0,0,0.22);
+}
+
+.hero h2{
+font-size:1.6rem;
+text-shadow:0 4px 18px rgba(0,0,0,0.2);
+}
+
+/* COUNTDOWN */
+
+.countdown{
+display:flex;
+gap:30px;
+margin-top:40px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.count-box{
+background:rgba(255,248,243,0.96);
+padding:20px 26px;
+border-radius:14px;
+box-shadow:0 10px 25px rgba(90,64,56,0.12);
+min-width:90px;
+font-weight:600;
+color:#6d1230;
+}
+
+/* GENERAL SECTIONS */
+
+section{
+padding:100px 10%;
+text-align:center;
+}
+
+/* MERGED CELEBRATION + AIDE MEMOIR */
+
+.birthday-invite{
+--cream:#f8f3ee;
+--nude:#eadccf;
+--beige:#d8bfa9;
+--soft-beige:#efe4d8;
+--brown:#7a5c4f;
+--burgundy:#6d1230;
+--olive:#4c6630;
+--pink:#d88aa0;
+--mint:#b9c2a3;
+--text-dark:#5a4038;
+
+padding:100px 10%;
+text-align:center;
+background:linear-gradient(180deg,#f8f3ee,#efe4d8);
+}
+
+.section-intro{
+max-width:760px;
+margin:0 auto;
+line-height:1.8;
+font-size:1.12rem;
+color:#5a4038;
+}
+
+.birthday-invite > h2{
+font-family:'Playfair Display',serif;
+font-size:2.5rem;
+margin-bottom:20px;
+color:#6d1230;
+}
+
+.invite-card{
+max-width:760px;
+margin:40px auto 0;
+padding:2.5rem 2rem;
+border-radius:24px;
+background:linear-gradient(
+180deg,
+rgba(255,255,255,0.5),
+rgba(239,228,216,0.78)
+);
+border:1px solid rgba(122,92,79,0.14);
+box-shadow:0 20px 50px rgba(122,92,79,0.12);
+color:#5a4038;
+backdrop-filter:blur(4px);
+text-align:left;
+}
+
+.eyebrow{
+margin:0 0 0.4rem;
+text-transform:uppercase;
+letter-spacing:0.16em;
+font-size:0.8rem;
+color:#4c6630;
+font-weight:700;
+text-align:center;
+}
+
+.invite-card h2{
+margin:0 0 2rem;
+font-size:clamp(2.2rem, 5vw, 4rem);
+line-height:1;
+color:#6d1230;
+font-family:'Playfair Display',serif;
+text-align:center;
+}
+
+.invite-block + .invite-block{
+margin-top:1.75rem;
+}
+
+.invite-block h3{
+margin:0 0 0.65rem;
+font-size:1rem;
+text-transform:uppercase;
+letter-spacing:0.08em;
+color:#6d1230;
+}
+
+.invite-block p{
+margin:0.45rem 0;
+font-size:1.05rem;
+line-height:1.7;
+color:#5a4038;
+}
+
+.closing{
+margin:2rem 0 0;
+font-size:1.05rem;
+color:#7a5c4f;
+font-weight:600;
+text-align:center;
+}
+
+.host{
+margin-top:2rem;
+padding-top:1.25rem;
+border-top:1px solid rgba(122,92,79,0.15);
+text-align:center;
+}
+
+.host-label{
+display:block;
+margin-bottom:0.4rem;
+text-transform:uppercase;
+letter-spacing:0.1em;
+font-size:0.85rem;
+font-weight:700;
+color:#6d1230;
+}
+
+.host-name{
+font-size:1.6rem;
+font-family:"Brush Script MT","Segoe Script",cursive;
+color:#4c6630;
+}
+
+.palette-wrap{
+margin-top:60px;
+}
+
+.palette-wrap h2{
+font-family:'Playfair Display',serif;
+font-size:2.5rem;
+margin-bottom:20px;
+color:#6d1230;
+}
+
+/* COLORS */
+
+.colors{
+display:flex;
+justify-content:center;
+gap:24px;
+margin-top:34px;
+flex-wrap:wrap;
+}
+
+.color{
+width:120px;
+height:120px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:600;
+color:white;
+box-shadow:0 10px 25px rgba(90,64,56,0.12);
+border:4px solid rgba(255,255,255,0.45);
+}
+
+.green{background:#5d7c57;}
+.pink{background:#d88aa0;}
+.burgundy{background:#6d1230;}
+.brown{background:#7a5c4f;}
+.olive{background:#6f7750;}
+.mint{background:#b9c2a3; color:#4b3a34;}
+
+/* SLIDESHOW */
+
+.moodboard{
+background:#f6efe8;
+}
+
+.moodboard h2{
+font-family:'Playfair Display',serif;
+font-size:2.5rem;
+color:#6d1230;
+}
+
+.slideshow{
+max-width:900px;
+margin:60px auto;
+height:500px;
+border-radius:20px;
+overflow:hidden;
+background:#eadccf;
+box-shadow:0 15px 40px rgba(90,64,56,0.16);
+position:relative;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.slide{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:contain;
+opacity:0;
+transition:opacity 1.8s ease;
+}
+
+.slide.active{
+opacity:1;
+}
+
+/* DOTS */
+
+.dots{
+display:flex;
+justify-content:center;
+gap:12px;
+margin-top:20px;
+flex-wrap:wrap;
+}
+
+.dot{
+width:12px;
+height:12px;
+border-radius:50%;
+background:#dcc6c0;
+cursor:pointer;
+transition:.3s;
+}
+
+.dot.active{
+background:#6d1230;
+width:26px;
+border-radius:20px;
+}
+
+/* DIRECTIONS SECTION */
+
+.venue{
+max-width:900px;
+margin:80px auto;
+padding:0 20px;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+.directions-panel{
+background:linear-gradient(135deg,#efe4d8,#eadccf);
+padding:50px 35px;
+color:#5a4038;
+border-radius:24px;
+box-shadow:0 20px 50px rgba(122,92,79,0.12);
+text-align:left;
+border:1px solid rgba(122,92,79,0.14);
+}
+
+.directions-title{
+font-size:2.4rem;
+margin-bottom:28px;
+color:#6d1230;
+font-family:'Poppins',sans-serif;
+line-height:1.1;
+font-weight:600;
+text-align:left;
+}
+
+.steps{
+display:flex;
+flex-direction:column;
+gap:18px;
+}
+
+.step{
+display:flex;
+gap:16px;
+align-items:flex-start;
+padding-bottom:18px;
+border-bottom:1px solid rgba(122,92,79,0.14);
+}
+
+.step:last-child{
+border-bottom:none;
+padding-bottom:0;
+}
+
+.step-number{
+width:38px;
+height:38px;
+border-radius:50%;
+background:#6d1230;
+color:#ffffff;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:700;
+font-size:1rem;
+flex-shrink:0;
+margin-top:2px;
+}
+
+.step-text{
+font-size:1rem;
+line-height:1.6;
+color:#5a4038;
+}
+
+.step-text strong{
+display:block;
+font-size:1.05rem;
+margin-bottom:4px;
+color:#4c6630;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:50px;
+font-size:.95rem;
+color:#7a5c4f;
+background:#f3e8df;
+}
+
+/* MODAL */
+
+.modal{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(90,64,56,0.28);
+display:flex;
+align-items:center;
+justify-content:center;
+z-index:999;
+padding:20px;
+}
+
+.modal-content{
+background:linear-gradient(135deg,#f8f3ee,#eadccf);
+border-radius:24px;
+width:min(95%, 760px);
+max-height:90vh;
+overflow-y:auto;
+box-shadow:0 25px 60px rgba(122,92,79,0.16);
+padding:0;
+border:1px solid rgba(122,92,79,0.14);
+}
+
+.modal-main{
+padding:50px 35px;
+text-align:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+background:transparent;
+color:#5a4038;
+}
+
+.modal-main h3{
+font-size:1.1rem;
+letter-spacing:1px;
+margin-bottom:10px;
+color:#4c6630;
+text-transform:uppercase;
+}
+
+.modal-main h1{
+font-family:'Poppins',sans-serif;
+font-size:3.2rem;
+line-height:1.15;
+margin-bottom:12px;
+color:#6d1230;
+}
+
+.modal-date{
+font-size:1.3rem;
+margin-bottom:35px;
+color:#7a5c4f;
+}
+
+.modal-countdown{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.modal-box{
+background:linear-gradient(180deg,#efe4d8,#e4d2c2);
+color:#5a4038;
+padding:24px 20px;
+border-radius:18px;
+min-width:130px;
+box-shadow:0 10px 25px rgba(122,92,79,0.12);
+border:1px solid rgba(122,92,79,0.12);
+}
+
+.modal-box span{
+font-size:3rem;
+line-height:1;
+display:block;
+margin-bottom:10px;
+color:#6d1230;
+}
+
+.modal-box p{
+margin:0;
+font-size:1rem;
+color:#7a5c4f;
+}
+
+.enter-btn{
+margin-top:38px;
+padding:16px 38px;
+border:none;
+border-radius:30px;
+background:linear-gradient(45deg,#7a5c4f,#a98363);
+color:white;
+font-size:18px;
+cursor:pointer;
+min-width:220px;
+box-shadow:0 8px 18px rgba(122,92,79,0.18);
+transition:all 0.25s ease;
+}
+
+.enter-btn:hover{
+transform:translateY(-2px);
+box-shadow:0 12px 25px rgba(122,92,79,0.24);
+}
+
+/* SCROLLBAR */
+
+.modal-content::-webkit-scrollbar{
+width:10px;
+}
+
+.modal-content::-webkit-scrollbar-thumb{
+background:#b89578;
+border-radius:20px;
+}
+
+/* TABLET */
+
+@media(max-width:900px){
+
+.hero{
+padding:40px 24px;
+justify-content:flex-end;
+align-items:center;
+background-position:center top;
+}
+
+.hero-content{
+width:100%;
+padding-bottom:60px;
+}
+
+.hero h1{
+font-size:3rem;
+}
+
+.hero h2{
+font-size:1.15rem;
+}
+
+.modal-main{
+padding:40px 24px;
+}
+
+.modal-main h1{
+font-size:2.4rem;
+}
+
+.modal-date{
+font-size:1.2rem;
+}
+
+.modal-countdown{
+gap:18px;
+}
+
+.modal-box{
+min-width:120px;
+padding:22px 18px;
+}
+
+.modal-box span{
+font-size:2.4rem;
+}
+
+.birthday-invite,
+.moodboard,
+section{
+padding:70px 7%;
+}
+
+.invite-card{
+padding:2.2rem 1.6rem;
+}
+
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero{
+padding:30px 20px;
+justify-content:flex-end;
+align-items:center;
+text-align:center;
+background-position:center top;
+}
+
+.hero::after{
+content:"";
+position:absolute;
+left:0;
+bottom:0;
+width:100%;
+height:55%;
+background:linear-gradient(
+to top,
+rgba(58,40,34,0.62),
+rgba(58,40,34,0.18),
+rgba(58,40,34,0)
+);
+pointer-events:none;
+z-index:1;
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+width:100%;
+padding:0 0 90px;
+margin-top:auto;
+}
+
+.hero h1{
+font-size:2.4rem;
+letter-spacing:1px;
+line-height:1.15;
+margin-bottom:12px;
+}
+
+.hero h2{
+font-size:1.1rem;
+line-height:1.4;
+margin-bottom:22px;
+}
+
+.countdown{
+gap:14px;
+justify-content:center;
+}
+
+.count-box{
+padding:16px 18px;
+min-width:78px;
+font-size:.95rem;
+}
+
+.slideshow{
+height:320px;
+}
+
+section{
+padding:70px 7%;
+}
+
+.modal{
+padding:14px;
+align-items:center;
+}
+
+.modal-content{
+width:100%;
+border-radius:20px;
+}
+
+.modal-main{
+padding:28px 18px;
+}
+
+.modal-main h3{
+font-size:.95rem;
+}
+
+.modal-main h1{
+font-size:2rem;
+line-height:1.2;
+}
+
+.modal-date{
+font-size:1rem;
+margin-bottom:24px;
+}
+
+.modal-countdown{
+display:grid;
+grid-template-columns:repeat(2, minmax(110px, 1fr));
+gap:14px;
+}
+
+.modal-box{
+min-width:unset;
+width:100%;
+padding:20px 14px;
+border-radius:16px;
+}
+
+.modal-box span{
+font-size:2.2rem;
+margin-bottom:8px;
+}
+
+.enter-btn{
+width:100%;
+max-width:260px;
+padding:15px 22px;
+font-size:16px;
+margin-top:28px;
+}
+
+.venue{
+margin:60px auto;
+}
+
+.directions-panel{
+padding:30px 20px;
+border-radius:20px;
+}
+
+.directions-title{
+font-size:1.7rem;
+margin-bottom:22px;
+text-align:center;
+}
+
+.step{
+gap:12px;
+padding-bottom:16px;
+}
+
+.step-number{
+width:34px;
+height:34px;
+font-size:0.95rem;
+}
+
+.step-text{
+font-size:0.95rem;
+}
+
+.step-text strong{
+font-size:1rem;
+}
+
+.birthday-invite > h2,
+.palette-wrap h2,
+.moodboard h2{
+font-size:2rem;
+}
+
+.invite-card h2{
+font-size:2rem;
+}
+
+.invite-card{
+padding:2rem 1.25rem;
+}
+
+.invite-block p,
+.section-intro{
+font-size:1rem;
+line-height:1.6;
+}
+
+.colors{
+gap:18px;
+}
+
+.color{
+width:96px;
+height:96px;
+font-size:.92rem;
+}
+
+.host-name{
+font-size:1.35rem;
+}
+
+}
+
+/* SMALL MOBILE */
+
+@media(max-width:420px){
+
+.hero{
+padding:24px 16px;
+}
+
+.hero-content{
+padding-bottom:70px;
+}
+
+.hero h1{
+font-size:1.95rem;
+line-height:1.15;
+}
+
+.hero h2{
+font-size:1rem;
+line-height:1.35;
+margin-bottom:18px;
+}
+
+.countdown{
+gap:10px;
+}
+
+.count-box{
+min-width:72px;
+padding:14px 12px;
+font-size:.9rem;
+}
+
+.modal-main{
+padding:24px 14px;
+}
+
+.modal-main h1{
+font-size:1.7rem;
+}
+
+.modal-date{
+font-size:.95rem;
+}
+
+.modal-countdown{
+grid-template-columns:repeat(2, 1fr);
+gap:12px;
+}
+
+.modal-box{
+padding:16px 10px;
+}
+
+.modal-box span{
+font-size:1.9rem;
+}
+
+.enter-btn{
+max-width:none;
+width:100%;
+}
+
+.color{
+width:88px;
+height:88px;
+font-size:.85rem;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <section class="modal-main">
+      <div class="modal-header">
+        <h3>COUNTING DOWN TO</h3>
+        <h1>Innocentia's 50th Birthday</h1>
+        <p class="modal-date">28 March 2026 · 16:00</p>
+      </div>
+
+      <div class="modal-countdown">
+        <div class="modal-box">
+          <span id="m-days">0</span>
+          <p>Days</p>
+        </div>
+
+        <div class="modal-box">
+          <span id="m-hours">0</span>
+          <p>Hours</p>
+        </div>
+
+        <div class="modal-box">
+          <span id="m-minutes">0</span>
+          <p>Minutes</p>
+        </div>
+
+        <div class="modal-box">
+          <span id="m-seconds">0</span>
+          <p>Seconds</p>
+        </div>
+      </div>
+
+      <div class="modal-action">
+        <button class="enter-btn" onclick="closeModal()">
+          Continue to Invitation
+        </button>
+      </div>
+    </section>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Innocentia Turns 50</h1>
+    <h2>50 Years of Love • Laughter • Music</h2>
+
+    <div class="countdown">
+      <div class="count-box"><div id="days">0</div>Days</div>
+      <div class="count-box"><div id="hours">0</div>Hours</div>
+      <div class="count-box"><div id="minutes">0</div>Minutes</div>
+      <div class="count-box"><div id="seconds">0</div>Seconds</div>
+    </div>
+  </div>
+</section>
+
+<!-- MERGED CELEBRATION / AIDE MEMOIR / PALETTE -->
+<section class="birthday-invite">
+  <h2>The Celebration</h2>
+
+  <p class="section-intro">
+    We look forward to hosting you for a magical afternoon celebrating Innocentia's milestone birthday.
+    Elegance, sunset sips, gourmet bites, music, dancing and beautiful vineyard vibes. A jacket is recommended as the evening can get chilly. We can't wait to celebrate together!
+  </p>
+
+  <div class="invite-card">
+    <p class="eyebrow">Celebrating</p>
+    <h2>Innocentia’s 50th Birthday</h2>
+
+    <div class="invite-block">
+      <h3>Venue</h3>
+      <p>
+        <strong>Klein Goederust Boutique Estate</strong><br>
+        Franschhoek Valley, Main Road (R45), Franschhoek
+      </p>
+    </div>
+
+    <div class="invite-block">
+      <h3>Dress Code</h3>
+      <p>
+        <strong>Theme:</strong> Smart, effortless chic with a touch of hip comfort.
+      </p>
+      <p>
+        <strong>Color Palette:</strong> Burgundy, shades of pink, olive green, brown, mint, nude.
+      </p>
+      <p>
+        As the evening cools, a stylish jacket is recommended.
+      </p>
+    </div>
+
+    <div class="invite-block">
+      <h3>Celebration</h3>
+      <p><strong>15:30 onwards – till late!</strong></p>
+      <p>
+        Good food, great drinks, and wonderful company await.<br>
+        Just bring your party spirit as we celebrate Innocentia!
+      </p>
+    </div>
+
+    <p class="closing">
+      Looking forward to creating unforgettable memories together.
+    </p>
+
+    <div class="host">
+      <span class="host-label">With love from your host</span>
+      <span class="host-name">Innocentia Motau</span>
+    </div>
+  </div>
+
+  <div class="palette-wrap">
+    <h2>Colour Palette</h2>
+
+    <div class="colors">
+      <div class="color green">Green</div>
+      <div class="color pink">Pink</div>
+      <div class="color burgundy">Burgundy</div>
+      <div class="color brown">Brown</div>
+      <div class="color mint">Mint</div>
+      <div class="color olive">Olive</div>
+    </div>
+  </div>
+</section>
+
+<section class="moodboard">
+  <h2>Mood Board</h2>
+
+  <div class="slideshow">
+    <img id="slideA" class="slide active" src="images/img1.jpeg" alt="Celebration moodboard image 1">
+    <img id="slideB" class="slide" src="images/img2.jpeg" alt="Celebration moodboard image 2">
+  </div>
+
+  <div class="dots" id="dots"></div>
+</section> 
+
+<section class="venue venue-directions">
+  <div class="directions-panel">
+    <h2 class="directions-title">Directions from CPT International Airport</h2>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <div class="step-text">
+          <strong>Depart Airport</strong>
+          Exit the airport and take the N2 highway towards Somerset West/Cape Town.
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">2</div>
+        <div class="step-text">
+          <strong>Take Exit 33</strong>
+          Merge onto the R300 towards Bellville/N1.
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">3</div>
+        <div class="step-text">
+          <strong>Merge onto N1</strong>
+          Follow the N1 north towards Paarl.
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">4</div>
+        <div class="step-text">
+          <strong>Take Exit 47 (Klapmuts/Stellenbosch)</strong>
+          Turn right onto the R44 towards Stellenbosch.
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">5</div>
+        <div class="step-text">
+          <strong>Follow R310</strong>
+          Turn left onto the R310 (Helshoogte Road) toward Franschhoek/Boschendal.
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">6</div>
+        <div class="step-text">
+          <strong>Continue to Franschhoek</strong>
+          Follow the R310 until it merges with the R45. Continue into Franschhoek.
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">7</div>
+        <div class="step-text">
+          <strong>Arrival</strong>
+          Klein Goederust is situated in the Franschhoek Valley.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+A night of elegance, wine & celebration 🍷
+</footer>
+
+<script>
+function closeModal(){
+document.getElementById("modal").style.display="none";
+}
+
+const eventDate = new Date(2026, 2, 28, 16, 0, 0).getTime();
+
+function updateCountdown(){
+let now = new Date().getTime();
+let distance = eventDate - now;
+
+if(distance < 0){
+distance = 0;
+}
+
+let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+document.getElementById("days").textContent = days;
+document.getElementById("hours").textContent = hours;
+document.getElementById("minutes").textContent = minutes;
+document.getElementById("seconds").textContent = seconds;
+
+document.getElementById("m-days").textContent = days;
+document.getElementById("m-hours").textContent = hours;
+document.getElementById("m-minutes").textContent = minutes;
+document.getElementById("m-seconds").textContent = seconds;
+}
+
+updateCountdown();
+setInterval(updateCountdown,1000);
+
+let currentIndex = 0;
+const totalSlides = 35;
+
+const slideA = document.getElementById("slideA");
+const slideB = document.getElementById("slideB");
+let showingA = true;
+
+const dotsWrap = document.getElementById("dots");
+
+let slideOrder = Array.from({ length: totalSlides }, (_, i) => i + 1);
+
+function shuffleArray(array){
+for(let i = array.length - 1; i > 0; i--){
+const j = Math.floor(Math.random() * (i + 1));
+[array[i], array[j]] = [array[j], array[i]];
+}
+}
+
+shuffleArray(slideOrder);
+
+for(let i = 1; i <= totalSlides; i++){
+let dot = document.createElement("span");
+dot.className = "dot" + (i === 1 ? " active" : "");
+dot.onclick = () => goToSlide(i);
+dotsWrap.appendChild(dot);
+}
+
+function updateDots(index){
+document.querySelectorAll(".dot").forEach((dot, i) => {
+dot.classList.toggle("active", i === index);
+});
+}
+
+function showSlideByIndex(index){
+let slideNum = slideOrder[index];
+let src = "images/img" + slideNum + ".jpeg";
+
+if(showingA){
+slideB.src = src;
+slideB.classList.add("active");
+slideA.classList.remove("active");
+}else{
+slideA.src = src;
+slideA.classList.add("active");
+slideB.classList.remove("active");
+}
+
+showingA = !showingA;
+updateDots(index);
+}
+
+function nextSlide(){
+currentIndex++;
+
+if(currentIndex >= totalSlides){
+shuffleArray(slideOrder);
+currentIndex = 0;
+}
+
+showSlideByIndex(currentIndex);
+}
+
+function prevSlide(){
+currentIndex--;
+
+if(currentIndex < 0){
+shuffleArray(slideOrder);
+currentIndex = totalSlides - 1;
+}
+
+showSlideByIndex(currentIndex);
+}
+
+setInterval(nextSlide, 3500);
+
+function goToSlide(num){
+currentIndex = num - 1;
+showSlideByIndex(currentIndex);
+}
+
+let startX = 0;
+const slideshow = document.querySelector(".slideshow");
+
+slideshow.addEventListener("touchstart", e => {
+startX = e.touches[0].clientX;
+});
+
+slideshow.addEventListener("touchend", e => {
+let endX = e.changedTouches[0].clientX;
+
+if(startX - endX > 50){
+nextSlide();
+}
+
+if(endX - startX > 50){
+prevSlide();
+}
+});
+
+showSlideByIndex(currentIndex);
+</script>
+
+</body>
+</html>
+
